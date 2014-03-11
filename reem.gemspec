@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/em-ruby/version', __FILE__)
+require File.expand_path('../lib/reem/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Matt Kirk"]
@@ -13,5 +13,6 @@ Gem::Specification.new do |gem|
   gem.name          = "reem"
   gem.require_paths = ["lib"]
   gem.version       = Reem::VERSION
+  gem.add_dependency 'narray'
   gem.add_development_dependency      'minitest'
 end
