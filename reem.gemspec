@@ -5,13 +5,13 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Matt Kirk"]
   gem.email         = ["matt@matthewkirk.com"]
   gem.description   = gem.summary = "Simple EM Clustering for Ruby"
-  gem.homepage      = "http://github.com/hexgnu/em-ruby"
+  gem.homepage      = "http://github.com/hexgnu/reem"
   gem.license       = "MIT"
 
-  gem.files         = `git ls-files | grep -Ev '^(myapp|examples)'`.split("\n")
+  gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- test/*`.split("\n")
-  gem.name          = "em-ruby"
+  gem.name          = "reem"
   gem.require_paths = ["lib"]
-  gem.version       = EMClusterer::VERSION
+  gem.version       = Reem::VERSION
   gem.add_development_dependency      'minitest'
 end
